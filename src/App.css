@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-image: url('');
+  background-image: url('src\\assets\\images\\bg-cover.png');
   display: flex;
   place-items: center;
   min-height: 100vh;
