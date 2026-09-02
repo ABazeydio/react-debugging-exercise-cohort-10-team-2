@@ -83,7 +83,7 @@ function App() {
   useEffect(() => {
     if (!win && gameStarted) {
       const interval = setInterval(() => {
-        setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 2 : prevTimer))
+        setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : prevTimer))
       }, 1000)
       return () => clearInterval(interval)
     }
