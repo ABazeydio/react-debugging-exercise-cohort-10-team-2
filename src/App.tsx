@@ -108,7 +108,7 @@ function App() {
     if (flippedCards.length === 2 && isMatch) {
       if (isMatch) {
         let match = flippedCards
-        setMatchedCards([...flippedCards, ...flippedCards])
+        setMatchedCards([...match, ...matchedCards])
         // If the card matches, add 10 to the score
         setScore((prev) => prev + SUCCESS_SCORE)
       }
