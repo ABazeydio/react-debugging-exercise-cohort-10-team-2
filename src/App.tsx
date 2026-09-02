@@ -83,6 +83,7 @@ function App() {
   useEffect(() => {
     if (!win && gameStarted) {
       const interval = setInterval(() => {
+        // changed to decrement by 1 instead of 2 - Zubair
         setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : prevTimer))
       }, 1000)
       return () => clearInterval(interval)
