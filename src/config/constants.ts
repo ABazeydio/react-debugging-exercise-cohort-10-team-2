@@ -1,0 +1,7 @@
+// Constants
+const INITIAL_TIMER = 60
+const INITIAL_SCORE = 0
+const SUCCESS_SCORE = 10
+const FAILURE_SCORE = 5 // negative -5
+
+export { INITIAL_TIMER, INITIAL_SCORE, SUCCESS_SCORE, FAILURE_SCORE }
