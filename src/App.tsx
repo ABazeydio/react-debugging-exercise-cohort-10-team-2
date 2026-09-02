@@ -109,6 +109,7 @@ function App() {
     if (flippedCards.length === 2 && isMatch) {
       if (isMatch) {
         let match = flippedCards
+        //Add the matched cards instead of flippedCards to the matchedCards state
         setMatchedCards([...match, ...matchedCards])
         // If the card matches, add 10 to the score
         //setScore method was not implemented before so I added it here to update the score when a match is found.
