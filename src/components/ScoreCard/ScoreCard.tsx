@@ -3,6 +3,7 @@ import React from 'react'
 interface ScoreCardProps {
   icon: string
   title: string
+  // fix: change value type to String | number to allow for both string and number values
   value: String | number
 }
 

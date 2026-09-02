@@ -126,7 +126,7 @@ function App() {
   }, [flippedCards.length, matchedCards])
 
   const handleResetGame = () => { resetGame() }
-
+  //add missing header component to the return statement
   return (
     <div>
       { <Header /> }
