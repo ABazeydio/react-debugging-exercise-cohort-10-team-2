@@ -9,6 +9,7 @@ interface ScoreCardProps {
 const ScoreCard: React.FC<ScoreCardProps> = ({ icon, title, value }) => (
   <div className="info-card">
     <div className="info-icon">
+       {/* fix: add missing src and value to ScoreCard component */}
       <img src={icon} className="score" alt={`${title} icon`} />
     </div>
     <div className="info-card-title-wrapper">
