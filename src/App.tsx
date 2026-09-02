@@ -122,15 +122,16 @@ function App() {
     }
   }, [flippedCards.length, matchedCards])
 
-  const handleResetGame = () => {}
+  const handleResetGame = () => { resetGame() }
 
   return (
     <div>
-      {/* <Header /> */}
+      { <Header /> }
       <GameInfo moves={moves} score={score} timer={timer.toString()} />
       <div className="cards-container">
         {cards.map(({ shapeId, uniqueId, shape }) => (
           <Card
+            handleCardClick={handleCardClick}
             key={uniqueId}
             uniqueId={uniqueId}
             shapeId={shapeId}

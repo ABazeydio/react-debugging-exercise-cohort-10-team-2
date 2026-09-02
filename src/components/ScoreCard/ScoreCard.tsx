@@ -3,7 +3,7 @@ import React from 'react'
 interface ScoreCardProps {
   icon: string
   title: string
-  value: number
+  value: String | number
 }
 
 const ScoreCard: React.FC<ScoreCardProps> = ({ icon, title, value }) => (
