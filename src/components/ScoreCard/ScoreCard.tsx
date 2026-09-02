@@ -9,10 +9,11 @@ interface ScoreCardProps {
 const ScoreCard: React.FC<ScoreCardProps> = ({ icon, title, value }) => (
   <div className="info-card">
     <div className="info-icon">
-      <img className="score" alt={`${title} icon`} />
+      <img src={icon} className="score" alt={`${title} icon`} />
     </div>
     <div className="info-card-title-wrapper">
       <span className="info-card-title">{`${title}: `}</span>
+      <span className="info-card-value">{value}</span>
     </div>
   </div>
 )
